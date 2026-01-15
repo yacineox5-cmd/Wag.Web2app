@@ -2016,17 +2016,46 @@ p {
 }
 
 .btn-demo {
-  background: #ffffff;
-  color: #1a1a1a;
-  border: 2px solid #1a1a1a;
+  background: #ffffff !important;
+  color: #1a1a1a !important;
+  border: 2px solid #1a1a1a !important;
   padding: 12px 28px;
   font-weight: 600;
   transition: all 0.25s ease;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border-radius: 50px;
+  height: auto;
+  line-height: 1.5;
+  margin-inline-start: 15px;
 }
 
 .btn-demo:hover {
-  background: #1a1a1a;
-  color: #ffffff;
+  background: #1a1a1a !important;
+  color: #ffffff !important;
+  border-color: #1a1a1a !important;
+  transform: translateY(-2px);
+}
+
+/* Enhanced RTL support for .btn-demo - ensures identical appearance */
+[dir="rtl"] .btn-demo {
+  background: #ffffff !important;
+  color: #1a1a1a !important;
+  border: 2px solid #1a1a1a !important;
+  padding: 12px 28px !important;
+  border-radius: 50px !important;
+  display: inline-block !important;
+  text-align: center !important;
+  margin-inline-start: 15px;
+  margin-inline-end: 0;
+}
+
+[dir="rtl"] .btn-demo:hover {
+  background: #1a1a1a !important;
+  color: #ffffff !important;
+  border-color: #1a1a1a !important;
   transform: translateY(-2px);
 }
 
