@@ -2015,4 +2015,19 @@ p {
   margin: 0;
 }
 
+.btn-demo {
+  background: #ffffff;
+  color: #1a1a1a;
+  border: 2px solid #1a1a1a;
+  padding: 12px 28px;
+  font-weight: 600;
+  transition: all 0.25s ease;
+}
+
+.btn-demo:hover {
+  background: #1a1a1a;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
 /*# sourceMappingURL=style.css.map */
